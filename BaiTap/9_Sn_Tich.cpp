@@ -1,5 +1,11 @@
 // Tinh tich cac so tu 1 -> n
 // Ex: S(n) = 1 + 1.2 +1.2.3 + 1.2.3...n
+/* 
+! Thuat Toan:
+    - Kiem tra neu n < 0 yeu cau nhap lai
+    - for loop tu i -> n
+    - Tao bien Tich luu tru gia tri 1.n sau moi lan lap
+    - Tao bien Tong luu tru gia tri 1+1.n sau moi lan lap */
 #include <iostream>
 using namespace std;
 
