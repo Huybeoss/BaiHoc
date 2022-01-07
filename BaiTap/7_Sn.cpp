@@ -1,4 +1,11 @@
-//! Tinh tong cac so le, va hieu cac so chan tu 1 -> n
+// Tinh tong cac so le, va hieu cac so chan tu 1 -> n
+/*
+! Thuat toan
+    - Nhap vao so nguyen duong n kiem tra voi dieu kien > 0
+    - For loop neu i chia het cho 2 -> so chan, tao bien sum = sum - i
+    - Neu i khong chia het cho 2 -> so le, sum = sum + i
+    - Return sum.
+    */
 
 #include <iostream>
 #include <math.h>
