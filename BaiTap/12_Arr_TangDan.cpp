@@ -9,7 +9,7 @@ void Sap_xep_tang(int &a, int &b)
     b = a;
     a = temp;
 }
-void Nhap_mang(int arr[], int &n)
+void in_arrays(int arr[], int &n)
 {
     random_device random;
     mt19937_64 Ket_qua(random());
@@ -19,7 +19,7 @@ void Nhap_mang(int arr[], int &n)
         arr[i] = uni(Ket_qua);
     }
 }
-void Xuat_mang(int arr[], int n)
+void out_arrays(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -44,7 +44,7 @@ int main()
     int nSize;
     cout << "Nhap vao so luong phan tu mang: ";
     cin >> nSize;
-    Nhap_mang(Arr, nSize);
+    in_arrays(Arr, nSize);
     Hoan_vi(Arr, nSize);
-    Xuat_mang(Arr, nSize);
+    out_arrays(Arr, nSize);
 }

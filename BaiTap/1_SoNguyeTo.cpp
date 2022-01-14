@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace std;
 
-void Kiem_tra()
+void check()
 {
     cout << "Enter the number: ";
     int n;
@@ -39,7 +39,7 @@ void Kiem_tra()
 }
 int main()
 {
-    Kiem_tra();
+    check();
     return 0;
 }
 #endif // Sai

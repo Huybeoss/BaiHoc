@@ -9,17 +9,17 @@
 #include <iostream>
 using namespace std;
 
-int Kiem_tra()
+int check()
 {
     int n;
     do
     {
-        cout << "Nhap vao gia tri n: ";
+        cout << "Enter the n value: ";
         cin >> n;
         if (n < 0)
         {
             system("clear");
-            cout << "Gia tri sai, vui long nhap lai!" << endl;
+            cout << "Value incorrect, please again!" << endl;
         }
     } while (n < 0);
     return n;
@@ -38,8 +38,8 @@ int Tinh_toan(int &n)
 int main()
 {
     int n;
-    n = Kiem_tra();
+    n = check();
     int Ket_qua = Tinh_toan(n);
-    cout << "Ket qua la: " << Ket_qua << endl;
+    cout << "Result is: " << Ket_qua << endl;
     return 0;
 }

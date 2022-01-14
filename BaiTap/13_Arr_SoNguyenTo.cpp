@@ -1,6 +1,6 @@
 // Nhap vao mang so ngau nhien, va sau do in ra cac so trong mang la so nguyen to.
-//! Thuat toan. 
-/* 
+//! Thuat toan.
+/*
 - Nhap vao mang so ngau nhien
 - Sau do su dung kieu du lieu boolean tao ham Kiem tra
 - Sau do tao ham Xuat mang su dung vong lap for xuat ra cac mang tu i -> n
@@ -10,7 +10,7 @@
 #include <random>
 using namespace std;
 #define MAX 100
-void Nhap_mang(int arr[], int &n)
+void in_arrays(int arr[], int &n)
 {
     random_device random;
     mt19937_64 Ketqua(random());
@@ -29,7 +29,7 @@ bool Kiem_Tra(int n)
             return false;
     return true;
 }
-void Xuat_mang(int arr[], int n)
+void out_arrays(int arr[], int n)
 {
     int x;
     cout << "Cac phan tu trong mang co gia tri la so nguyen to la:" << endl;
@@ -37,7 +37,7 @@ void Xuat_mang(int arr[], int n)
     {
         x = arr[i];
         if (Kiem_Tra(x) == true)
-            cout << "arr[" << i << "]: " << arr[i] << endl;
+            cout << "arr[" << i << "]: " << arr[i] << "\t";
     }
     cout << endl;
 }
@@ -47,7 +47,7 @@ int main()
     int nsize;
     cout << "Nhap vao so luong phan tu: ";
     cin >> nsize;
-    Nhap_mang(Arr, nsize);
-    Xuat_mang(Arr, nsize);
+    in_arrays(Arr, nsize);
+    out_arrays(Arr, nsize);
     return 0;
 }

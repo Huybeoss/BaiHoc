@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void Nhap_mang(int arr[], int &n)
+void in_arrays(int arr[], int &n)
 {
     random_device random;                      // Khoi tao 1 bo so ngau nhien co ten random
     mt19937 Ketqua(random());               // Lay so ngau nhien tu bo so ngau nhien ra ngoai
@@ -15,7 +15,7 @@ void Nhap_mang(int arr[], int &n)
     }
 }
 
-void Xuat_mang(int arr[], int n)
+void out_arrays(int arr[], int n)
 {
     for (int i = 0; i < n; i++)
     {
@@ -28,9 +28,9 @@ int main()
 {
     int Arr[MAX];
     int nSize;
-    cout << "Nhap vao so luong phan tu n: ";
+    cout << "Enter the number of element in array: ";
     cin >> nSize;
-    Nhap_mang(Arr, nSize);
-    Xuat_mang(Arr, nSize);
+    in_arrays(Arr, nSize);
+    out_arrays(Arr, nSize);
     return 0;
 }

@@ -28,7 +28,7 @@ int main()
 #include <iostream>
 using namespace std;
 
-int Kiem_tra()
+int check()
 {
     int n;
     do
@@ -46,7 +46,7 @@ int Kiem_tra()
 int main()
 {
     int n;
-    n = Kiem_tra();
+    n = check();
     int a(1);
     int b(0);
     int Temp(0);
